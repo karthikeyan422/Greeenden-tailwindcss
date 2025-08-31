@@ -16,7 +16,7 @@
     <nav class="bg-green-200 p-2 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl">Greenden</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="size-6 w-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -37,6 +37,29 @@
             </li>
         </ul>
     </nav>
+    <!--side navbar-->
+
+    <section id="sidenav" class="bg-green-200 fixed z-20 top-0 transition-all duration-1000" style="width: 50%; height: 70%; right: -50%;">
+        <div class="text-right p-5">
+            <p id="closenavv" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col items-center p-10 gap-10 text-gray-600 px-2">
+
+            <li class="hover:underline to-black">
+                <a href="">Home</a>
+            </li>
+
+            <li class="hover:underline to-black">
+                <a href="product.html">Product</a>
+            </li>
+
+            <li class="hover:underline to-black">
+                <a href="Contact.html">Contact</a>
+            </li>
+        </ul>
+
+    </section>
+
     <!--Header section-->
 
     <section class="bg-green-200 p-4 flex justify-center md:p-3">
@@ -225,14 +248,18 @@
         <br>
         <button class=" border bg-black text-white rounded-xl cursor-pointer hover:underline p-2 m-4">Subscribe</button>
     </section>
-<!--footer section-->
-<div>
-    <div class="bg-green-600 p-4 text-white">
-        <h1 class="font-bold text-2xl p-3 text text-black">Greeden</h1>
-        <p class="p-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, rerum.</p>
-        <p class="p-3">&copy;Greenden.com</p>
+    <!--footer section-->
+    <div>
+        <div class="bg-green-600 p-4 text-white">
+            <h1 class="font-bold text-2xl p-3 text text-black">Greeden</h1>
+            <p class="p-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, rerum.</p>
+            <p class="p-3">&copy;Greenden.com</p>
+        </div>
     </div>
-</div>
+
+<script src="indexl.js">
+
+</script>
 </body>
 
 </html>
